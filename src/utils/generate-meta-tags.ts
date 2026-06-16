@@ -25,7 +25,6 @@ export function generateMetaTags({
   language,
   locale,
 }: GenerateMetaTagsParams): GenerateMetaTagsResponse {
-
   // Compute canonical URL at runtime to avoid module-load env dependency
   const isProd = import.meta.env.VITE_DOMAIN_ENV === "production";
   const domain = isProd
